@@ -1,0 +1,6 @@
+#!/bin/sh
+mkdir -p /usr/local/share/ca-certificates
+mkdir -p /certs
+cp -r /certs /usr/local/share/ca-certificates
+update-ca-certificates
+./traefik-forward-auth
