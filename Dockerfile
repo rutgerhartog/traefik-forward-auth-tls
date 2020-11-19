@@ -4,4 +4,5 @@ RUN apk update && apk upgrade && apk add ca-certificates
 
 COPY start .
 
-ENTRYPOINT ["./start"]
+RUN chmod +x start
+ENTRYPOINT ["start"]
