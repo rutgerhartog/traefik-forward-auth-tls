@@ -1,4 +1,4 @@
-FROM funkypenguin/traefik-forward-auth
+FROM thomseddon/traefik-forward-auth:2
 
 RUN apk update && apk upgrade && apk add ca-certificates
 
