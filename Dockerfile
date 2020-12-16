@@ -1,7 +1,5 @@
 FROM thomseddon/traefik-forward-auth:2
 
-RUN apk update 
-RUN apk upgrade
 RUN apk add ca-certificates
 
 COPY start .
